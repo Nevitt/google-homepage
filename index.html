@@ -20,14 +20,33 @@
 
             li a {
                 display: block;
-                color: black;
+                color: rgb(27, 27, 27);
                 text-align: center;
-                padding: 20px 10px;
+                padding: 15px 10px;
                 opacity: 0.75;
                 font-size: 13px;
                 font-family: arial,sans-serif;
                 text-decoration: none;
-}
+            }           
+            .gapps {
+                width: 16px;
+                height: 16px;
+                background: url(/img/gappslite.png) no-repeat;
+                display: inline-block;
+                margin-top: 15px;
+                margin-left: 10px;
+            }
+            .gapps:hover {
+                background: url(/img/gappsdark.png) no-repeat;
+            }
+            .gN089b:hover{
+                border-color: rgb(233, 233, 233);
+                
+            }
+            a:hover{
+               text-decoration: underline; 
+            }
+            
         </style>
     </head>
         <body>
@@ -35,13 +54,18 @@
                 <li><a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a></li>
                 <li><a href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a></li>
                 <li style="float:right"><form><button class="nav-button">Sign In</button></form></li>
-                <li style="float:right"><a href="https://www.google.com/intl/en/about/products?tab=wh" title="Google apps"><img src="img/appsicon.png" height="25px"></a></li>
+                <li style="float:right"><a href="https://www.google.com/intl/en/about/products?tab=wh" title="Google apps" aria-expanded="false" role="button" class="gapps"></a></li>
                 <li style="float:right"><a href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a></li>
                 <li style="float:right"><a href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a></li>
             </ul>
-                <img src="img/googlelogo.png" alt="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" class="center" style="padding-top:109px">
+                <img src="img/googlelogo.png" alt="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" class="center" style="padding-top:50px">
                 <form>
                  <input type="text" class="center-text">
                 </form>
+                <div>
+                <center>
+                    <form><button class="gN089b">Google Search</button><button class="gN089b">I'm Feeling Lucky</button></form>
+                </center>
+                </div>
         </body>
 </html>

@@ -13,6 +13,12 @@
     margin-right: auto;
     padding-top:20px;
     width: 60%;
+    z-index: 3;
+    border-radius: 24px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    background: #fff;
+    
   }
   .nav-button {
     font-size: 13px;
@@ -28,4 +34,48 @@
     border:1px solid #4285f4;
     background: -webkit-linear-gradient(top,#4387fd,#4683ea);
     color: #fff;
+    margin-top: 8px;
   }
+.google-apps {
+    background-image: url(/img/i1_1967ca6a.png) 0px 0px;
+    background-size: 528px 68px;
+    display: inline-block;
+    outline: none;
+    vertical-align: middle;
+    border-radius: 2px;
+    box-sizing: border-box;
+    height: 30px;
+    width: 30px;
+    font-family: Arial, sans-serif;
+
+}
+.gN089b{
+    font: 400 13.3333px Arial;
+    display: inline-block;
+    text-shadow: none;
+    text-indent: 0px;
+    text-transform: none;
+    word-spacing: normal;
+    letter-spacing: normal;
+    text-rendering: auto;
+    box-sizing: border-box;
+    align-items: flex-start;
+    white-space: pre;
+    appearance: push-button;
+    user-select: none;
+    cursor: pointer;
+    text-align: center;
+    min-width: 54px;
+    height: 36px;
+    line-height: 27px;
+    padding: 0 16px;
+    margin: 11px 4px;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    color:#3c4043;
+    border-radius: 4px;
+    border: 1px solid #f8f9fa;
+    background-color: #f8f9fa;
+    background-image: -webkit-linear-gradient(top,#f8f9fa,#f8f9fa);
+}
+
