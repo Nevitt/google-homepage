@@ -3,22 +3,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <head>
         <title>Google</title>
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> <!---This line is to add a icon to tab/navigation bar CURRENT STATUS:NOT WORKING-->
-        <link rel="stylesheet" href="google.css">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> <!---Adds Google icon to tab/navigation bar-->
+        <link rel="stylesheet" href="google.css"> <!-- Links style sheet to this html to call classes -->
         <style>
-            ul {
+            ul { /* Sets default values for all UL tags */
                 list-style-type: none;
                 margin: 0;
                 padding: 0;
-                padding-left:5px;
+                padding-left:0px;
                 overflow: hidden;
             }
 
             li {   
-                float: left;
+                
             }
 
-            li a {
+            li a { 
                 display: block;
                 color: rgb(27, 27, 27);
                 text-align: center;
@@ -26,7 +26,7 @@
                 opacity: 0.75;
                 font-size: 13px;
                 font-family: arial,sans-serif;
-                text-decoration: none;
+                text-decoration: none; /* Turns off Hyperlink underline */                
             }           
             .gapps {
                 width: 16px;
@@ -37,28 +37,57 @@
                 margin-left: 10px;
             }
             .gapps:hover {
-                background: url(/img/gappsdark.png) no-repeat;
+                background: url(/img/gappsdark.png) no-repeat; /* Changes Google Apps icon to different color icon on mouse.over */
             }
             .gN089b:hover{
                 border-color: rgb(233, 233, 233);
                 
             }
             a:hover{
-               text-decoration: underline; 
+               text-decoration: underline; /* Shows underline when hyperlink is mouse.over */
             }
-            
+
+            body{ 
+                min-height:100vh; 
+                margin:0; 
+                position:relative; 
+            }
+            header{ 
+                min-height:50px; 
+                padding-top: 10px; 
+                margin-left: 15px; 
+                margin-right: 20px;
+            }
+            footer{ 
+                background: #eeeeee; 
+                outline: 1px solid rgb(218, 218, 218);}
+
+            body::after {
+              content: '';
+              display: block;
+              height: 45px; 
+            }
+
+            footer {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 45px;
+            }
         </style>
     </head>
         <body>
-            <ul>
-                <li><a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a></li>
-                <li><a href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a></li>
-                <li style="float:right"><form><button class="nav-button">Sign In</button></form></li>
-                <li style="float:right"><a href="https://www.google.com/intl/en/about/products?tab=wh" title="Google apps" aria-expanded="false" role="button" class="gapps"></a></li>
-                <li style="float:right"><a href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a></li>
-                <li style="float:right"><a href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a></li>
-            </ul>
-                <img src="img/googlelogo.png" alt="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" class="center" style="padding-top:50px">
+            <header>
+                <ul>
+                    <li style="float: left"><a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a></li>
+                    <li style="float: left"><a href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a></li>
+                    <li style="float:right"><form><button class="nav-button">Sign In</button></form></li>
+                    <li style="float:right"><a href="https://www.google.com/intl/en/about/products?tab=wh" title="Google apps" aria-expanded="false" role="button" class="gapps"></a></li>
+                    <li style="float:right"><a href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a></li>
+                    <li style="float:right"><a href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a></li>
+                </ul>
+            </header>
+            <img src="img/googlelogo.png" alt="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" class="center" style="padding-top:50px">
                 <form>
                  <input type="text" class="center-text">
                 </form>
@@ -66,6 +95,15 @@
                 <center>
                     <form><button class="gN089b">Google Search</button><button class="gN089b">I'm Feeling Lucky</button></form>
                 </center>
-                </div>
+            <footer>
+                <ul class="footer-ul">
+                    <li style="float: left"><a class="footer-text" href="https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
+                    <li style="float: left"><a class="footer-text" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a></li>
+                    <li style="float: left"><a class="footer-text" href="https://google.com/search/howsearchworks/?fg=1">How Search works</a></li>
+                    <li style="float: right"><a class="footer-text" href="https://www.google.com/preferences?hl=en">Settings</a></li>
+                    <li style="float: right"><a class="footer-text" href="https://policies.google.com/terms?hl=en&fg=1">Terms</a></li>
+                    <li style="float: right"><a class="footer-text" href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a></li>
+                </ul>
+            </footer>
         </body>
 </html>
